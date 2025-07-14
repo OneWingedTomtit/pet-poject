@@ -1,0 +1,109 @@
+.footer-contacts {
+  background-color: var(--background-footer);
+  color: var(--text-alt-color);
+  padding-top: 90px;
+  padding-left: 24px;
+  padding-bottom: 10px;
+  padding-right: 24px;
+  line-height: 1.5;
+}
+
+.footer-contacts__list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.footer-contacts__intro {
+  max-width: 350px;
+}
+
+.footer-contacts__title {
+  text-transform: uppercase;
+  color: var(--brand-color);
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+}
+
+.footer-contacts__intro-title {
+  font-family: var(--title-font);
+  font-size: 38px;
+  font-weight: 600;
+  color: var(--title-alt-color);
+  margin: 2rem 0;
+}
+
+.footer-contacts__intro-text {
+  font-size: 19px;
+  line-height: 1.5;
+  color: var(--text-alt-color);
+  font-weight: 600;
+}
+
+.footer-contacts__item {
+  flex: 1 1 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.footer-contacts__item-ico {
+  background-color: var(--footer-back-ico-color);
+  color: var(--footer-ico-color);
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-contacts__item-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--title-alt-color);
+  margin: 0;
+}
+
+.footer-contacts__item-text {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-alt-color);
+}
+
+.footer-contacts__link {
+  display: block;
+  color: var(--text-alt-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-contacts__link:hover {
+  color: var(--title-alt-color);
+}
+
+.footer-contacts__divider {
+  margin-top: 4rem auto;
+}
+
+.footer-contacts__divider svg path {
+  stroke: var(--footer-stroke-color);
+}
+
+@media (min-width: 768px) {
+  .footer-contacts__list {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  .footer-contacts__item--last {
+    max-width: 170px;
+  }
+}
