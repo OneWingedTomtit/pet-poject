@@ -1,0 +1,121 @@
+/* Загальний відступ навігації */
+.navbar {
+  padding: 16px 24px;
+
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Контейнер в навбарі */
+.navbar .container-fluid {
+  display: flex;
+  max-width: 1200px;
+  justify-content: space-between;
+}
+
+/* Лого */
+.navbar-brand img {
+  width: 160px;
+  height: auto;
+}
+
+/* Список навігації */
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+@media (max-width: 992px) {
+  .navbar-menu {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 35px;
+    gap: 20px;
+  }
+}
+
+/* Стилі для пунктів меню */
+.navbar-nav {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-link {
+  font-family: var(--font-family);
+  color: var(--title-color);
+  font-weight: 400;
+  font-size: 15px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Активний пункт меню */
+.nav-link.active {
+  font-weight: 600;
+  border-bottom: 2px solid currentColor;
+}
+
+/* Телефон — контейнер */
+.phone-box {
+  margin-left: 0;
+  margin-right: 0;
+  /* або змінюй при потребі */
+}
+
+.mobile-only {
+  display: none;
+}
+
+.desktop-only {
+  display: block;
+}
+
+/* Телефон — посилання */
+.phone-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-family);
+  color: var(--title-color);
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* Іконка телефону */
+.phone-item svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/* Показуємо в бургер-меню (опційно) */
+@media (max-width: 991.98px) {
+  .phone-box {
+    margin-left: 0;
+    margin-top: 12px;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  .phone-item {
+    padding-left: 16px;
+  }
+}

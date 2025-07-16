@@ -1,0 +1,109 @@
+.practice-container {
+  margin: 0 auto;
+  padding: 0 24px;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    padding: 0 32px;
+  }
+}
+
+.practice-areas {
+  background-color: var(--background-color);
+  padding-top: 105px;
+  padding-bottom: 105px;
+}
+
+.practice-areas__list {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  max-width: 1288px;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.practice-areas__item {
+  border: 2px solid var(--card-border-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    text-align: left;
+    height: 100%;
+    min-height: 400%;
+  }
+}
+
+.practice-areas__item--reversed {
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row-reverse;
+  }
+}
+
+.practice-areas__image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+
+  @media (min-width: 768px) {
+    width: 50%;
+    height: auto;
+    max-height: 100;
+    display: block;
+  }
+}
+
+.practice-areas__content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 39px 43px;
+
+  @media (min-width: 768px) {
+    width: 50%;
+    padding: 46px 52px;
+    height: 100%;
+    justify-content: center;
+  }
+}
+
+.practice-areas__heading {
+  font-family: "Open Sans";
+  font-size: 24px;
+  color: rgb(87, 92, 113);
+  font-weight: 700;
+}
+
+.practice-areas__heading-underline {
+  width: 40px;
+  height: 3px;
+  background-color: var(--brand-color);
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+
+.practice-areas__text {
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+.practice-areas__list-items {
+  list-style: disc inside;
+  color: var(--text-color);
+  font-size: 17px;
+  line-height: 1.6;
+  text-align: left;
+  margin: 0%;
+}
+
+.practice-areas__list-items li::marker {
+  color: var(--brand-color);
+}

@@ -1,0 +1,16 @@
+.subheader {
+  background-color: var(--brand-color); 
+  padding: 60px 20px;
+  text-align: center;
+
+  .subheader__title {
+    font-family: var(--title-font);
+    font-size: 38px;
+    font-weight: 700;
+    color: var(--title-alt-color); 
+
+    @media (min-width: 768px) {
+      font-size: 50px;
+    }
+  }
+}
